@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <style>
+    #tabulka{
+        width: 300px;
+        border: 5px solid black;
+        
+       
+    }
+</style>
+  </head>
+  
+  <body>
+    
+    <h2>Kvadratická rovnice</h2>
+    <input type="number" id="a"> x2 + <input type="number" id="b"> x + <input type="number" id="c"> = 0
+    <input type="button" value="Počítej" onclick="kvadra()">
+    <br>
+    <br>
+       <table id="tabulka"> 
+        <tr> <td>
+    <b>D=</b> <span id="Dis"></span>
+            </td>
+    </tr>
+    </table>
+    <br>
+      <table>
+    <tr>
+                <td id="tabulka"><b>x1=</b><span id="x1"></span></td>
+        <tr>
+            </tr>
+          <td id="tabulka"><b>x2=</b><span id="x2"></span></td>
+    </tr>
+</table>
+
+    
+    <h2>Fibonacciho posloupnost</h2>
+    Maximální číslo: <input type="number" id="max">
+    <input type="button" value="Vypsat" onclick="fibpos()">
+    <div id = "posl"></div>
+
+    <h2>Prvočísla</h2>
+    Prvních <input type="number" id="cislo"> prvočísel
+    <input type="button" value="Vypsat" onclick="prvcisl()">
+    <div id="vypsat"></div>
+  </body>
+</html>
